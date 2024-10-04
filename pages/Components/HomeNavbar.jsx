@@ -44,7 +44,7 @@ const Navbar = () => {
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center w-auto h-10 justify-center text-sm text-black rounded-lg md:hidden hover:text-gray-900 transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-opacity-50"
+          className="inline-flex items-center w-auto h-10 justify-center text-sm text-white rounded-lg md:hidden transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-opacity-50"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}>
           <span className="sr-only">Toggle menu</span>
