@@ -189,6 +189,34 @@ const Gallery = () => {
             <div className="swiper-slide-content">
               <img
                 className="w-full h-96 object-cover cursor-pointer"
+                src="/images/img12.jpg"
+                alt="Toilet"
+                onClick={() => openImage("/images/img12.jpg")}
+              />
+
+              <div className="text-center mt-4 font-semibold text-gray-700">
+                Interior
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-slide-content">
+              <img
+                className="w-full h-96 object-cover cursor-pointer"
+                src="/images/img13.jpg"
+                alt="Toilet"
+                onClick={() => openImage("/images/img13.jpg")}
+              />
+
+              <div className="text-center mt-4 font-semibold text-gray-700">
+                Passage
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-slide-content">
+              <img
+                className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img11.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img11.jpg")}

@@ -32,7 +32,7 @@ const Index = () => {
   return (
     <>
       <CustomNavbar />
-      <div className="overflow-x-auto mx-2 sm:mx-0 bg-[#D0F0C0]">
+      <div className="overflow-x-auto  bg-[#D0F0C0]">
         <Hero />
         <div id="about">
           <About />

@@ -2,8 +2,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import { useEffect, useState } from "react";
 
 const Testimonial = () => {
+  const [slidesPerView, setSlidesPerView] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setSlidesPerView(3);
+      } else if (window.innerWidth >= 768) {
+        setSlidesPerView(2);
+      } else {
+        setSlidesPerView(1);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const TestimonialData = [
     {
       id: 1,
@@ -29,7 +51,6 @@ const Testimonial = () => {
       name: "Krish Gupta",
       role: "Solo Traveler",
     },
-
     {
       id: 4,
       // image: "/images/guest-4.jpg",
@@ -43,39 +64,25 @@ const Testimonial = () => {
   return (
     <>
       {/* Testimonial Section */}
-      <section className="py-[80px] sm:py-32 px-16">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-8 md:px-12 lg:px-16">
         <div className="w-full mx-auto">
-          <div className="mb-12 text-center">
-            <h4 className="sm:text-4xl text-3xl font-bold text-black mb-2">
+          <div className="mb-8 sm:mb-10 md:mb-12 text-center">
+            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-2">
               Guest Testimonials
             </h4>
-            <p className="sm:text-lg text-base text-gray-600">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600">
               Hear what our guests have to say about their stay
             </p>
           </div>
 
           {/* Swiper */}
           <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
+            slidesPerView={slidesPerView}
+            spaceBetween={20}
             loop={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
             }}
             className="swiper-container mb-10">
             {TestimonialData.map((data) => (
@@ -83,22 +90,15 @@ const Testimonial = () => {
                 <div className="swiper-slide-content">
                   <div className="w-full text-gray-600">
                     <div className="h-full rounded-xl border bg-white border-gray-300 shadow-lg">
-                      <p className="leading-relaxed mb-6 text-[15px] px-5 pt-5 text-gray-700">
+                      <p className="leading-relaxed mb-4 text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-5 pt-3 sm:pt-4 md:pt-5 text-gray-700">
                         {data.content}
                       </p>
-                      <div className="inline-flex items-center bg-green-500/30 px-5 pt-2 pb-[6px] rounded-b-xl w-full">
-                        {/* <Image
-                          src={data.image}
-                          alt={data.name}
-                          className="w-12 h-12 rounded-full object-cover object-center"
-                          width={80}
-                          height={100}
-                        /> */}
-                        <span className="flex-grow flex flex-col pl-4">
-                          <span className="font-semibold text-gray-800">
+                      <div className="inline-flex items-center bg-green-500/30 px-3 sm:px-4 md:px-5 pt-2 pb-2 sm:pb-3 rounded-b-xl w-full">
+                        <span className="flex-grow flex flex-col pl-2 sm:pl-3 md:pl-4">
+                          <span className="font-semibold text-gray-800 text-xs sm:text-sm md:text-base">
                             {data.name}
                           </span>
-                          <span className="text-gray-600 text-sm">
+                          <span className="text-gray-600 text-xs sm:text-sm">
                             {data.role}
                           </span>
                         </span>
