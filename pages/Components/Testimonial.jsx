@@ -64,44 +64,46 @@ const Testimonial = () => {
   return (
     <>
       {/* Testimonial Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-8 md:px-12 lg:px-16">
-        <div className="w-full mx-auto">
-          <div className="mb-8 sm:mb-10 md:mb-12 text-center">
-            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-2">
-              Guest Testimonials
-            </h4>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600">
-              Hear what our guests have to say about their stay
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              What Our Guests Say
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover the experiences of those who've stayed with us
             </p>
           </div>
 
-          {/* Swiper */}
           <Swiper
             slidesPerView={slidesPerView}
-            spaceBetween={20}
+            spaceBetween={30}
             loop={true}
             autoplay={{
-              delay: 3000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
-            className="swiper-container mb-10">
+            className="swiper-container">
             {TestimonialData.map((data) => (
               <SwiperSlide key={data.id}>
-                <div className="swiper-slide-content">
-                  <div className="w-full text-gray-600">
-                    <div className="h-full rounded-xl border bg-white border-gray-300 shadow-lg">
-                      <p className="leading-relaxed mb-4 text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-5 pt-3 sm:pt-4 md:pt-5 text-gray-700">
-                        {data.content}
-                      </p>
-                      <div className="inline-flex items-center bg-green-500/30 px-3 sm:px-4 md:px-5 pt-2 pb-2 sm:pb-3 rounded-b-xl w-full">
-                        <span className="flex-grow flex flex-col pl-2 sm:pl-3 md:pl-4">
-                          <span className="font-semibold text-gray-800 text-xs sm:text-sm md:text-base">
-                            {data.name}
-                          </span>
-                          <span className="text-gray-600 text-xs sm:text-sm">
-                            {data.role}
-                          </span>
-                        </span>
+                <div className="bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 h-[300px] flex flex-col">
+                  <div className="p-8 flex flex-col justify-between h-full">
+                    <div className="text-gray-600 italic mb-5 flex-grow overflow-y-auto">
+                      "{data.content}"
+                    </div>
+                    <div className="flex items-center mt-4">
+                      <div className="flex-shrink-0">
+                        <img
+                          className="h-12 w-12 rounded-full"
+                          src={`https://ui-avatars.com/api/?name=${data.name}&background=random`}
+                          alt={data.name}
+                        />
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-lg font-medium text-gray-900">
+                          {data.name}
+                        </div>
+                        <div className="text-gray-500">{data.role}</div>
                       </div>
                     </div>
                   </div>

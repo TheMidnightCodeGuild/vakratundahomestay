@@ -30,7 +30,7 @@ const BannerSection = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/ep.svg"

@@ -47,7 +47,7 @@ const DestinationsNearby = () => {
               title: "Mahakaleshwar Jyotirlinga",
             },
             {
-              src: "/images/card-2.jpg",
+              src: "/images/iskon.webp",
               alt: "Isckon Temple",
               title: "Isckon Temple",
             },
