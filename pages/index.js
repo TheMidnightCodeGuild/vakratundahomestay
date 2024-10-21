@@ -19,6 +19,7 @@ const Index = () => {
 
     function raf(time) {
       lenis.raf(time);
+
       requestAnimationFrame(raf);
     }
 
@@ -32,7 +33,7 @@ const Index = () => {
   return (
     <>
       <CustomNavbar />
-      <div className="overflow-x-auto  bg-[#D0F0C0]">
+      <div className="overflow-x-hidden overflow-y-hidden  bg-[#D0F0C0]">
         <Hero />
         <div id="about">
           <About />

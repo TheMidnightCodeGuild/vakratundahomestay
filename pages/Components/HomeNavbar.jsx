@@ -1,22 +1,39 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
     handleResize();
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -28,8 +45,21 @@ const Navbar = () => {
     }
   };
 
+  const Path = (props) => (
+    <motion.path
+      fill="transparent"
+      strokeWidth="3"
+      stroke="currentColor"
+      strokeLinecap="round"
+      {...props}
+    />
+  );
+
   return (
-    <nav className="bg-opacity-10 backdrop-blur-sm text-white fixed top-0 left-0 right-0 z-50">
+    <nav
+      className={`bg-opacity-10 backdrop-blur-sm text-white fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
@@ -48,18 +78,29 @@ const Navbar = () => {
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}>
           <span className="sr-only">Toggle menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14">
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
+          <svg width="23" height="23" viewBox="0 0 23 23">
+            <Path
+              variants={{
+                closed: { d: "M 2 2.5 L 20 2.5" },
+                open: { d: "M 3 16.5 L 17 2.5" },
+              }}
+              animate={isMenuOpen ? "open" : "closed"}
+            />
+            <Path
+              d="M 2 9.423 L 20 9.423"
+              variants={{
+                closed: { opacity: 1 },
+                open: { opacity: 0 },
+              }}
+              transition={{ duration: 0.1 }}
+              animate={isMenuOpen ? "open" : "closed"}
+            />
+            <Path
+              variants={{
+                closed: { d: "M 2 16.346 L 20 16.346" },
+                open: { d: "M 3 2.5 L 17 16.346" },
+              }}
+              animate={isMenuOpen ? "open" : "closed"}
             />
           </svg>
         </button>

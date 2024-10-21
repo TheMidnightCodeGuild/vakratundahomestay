@@ -57,7 +57,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="text-white border-t-2 border-white bg-green-900 pt-2 pb-5 border-t mt-md-5 d-flex flex-column flex-md-row justify-content-between">
+      <div className="text-white border-t-2 border-white bg-green-900 pt-2 pb-5 mt-md-5 d-flex flex-column flex-md-row justify-content-between">
         <div className="text-center">
           <p className="mb-0">
             Vakratundahomestay.com | Website Designed and Developed By Mayank &

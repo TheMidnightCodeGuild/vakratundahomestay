@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 
@@ -24,7 +25,7 @@ const DestinationsNearby = () => {
   }, []);
 
   return (
-    <section className="py-12 sm:py-28 px-4 sm:px-16">
+    <section className="h-screen sm:py-24 py-48 px-4 sm:px-16">
       <div className="w-full mx-auto">
         <div className="mb-12 text-center">
           <h4 className="text-3xl sm:text-4xl font-bold text-black mb-2">

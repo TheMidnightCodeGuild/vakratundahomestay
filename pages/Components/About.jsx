@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BannerSection = () => {
   return (
-    <div className="w-full bg-cover bg-center sm:py-28 py-32 px-2 ">
+    <div className="w-full bg-cover bg-center h-screen sm:py-20 py-5 px-2 ">
       <div className="w-full mx-auto">
         <div className="text-center mb-4">
           <h1 className="sm:text-4xl text-3xl font-bold text-black ">
@@ -16,7 +16,7 @@ const BannerSection = () => {
               Experience the warmth of Indian hospitality at Vakratunda Homestay
               in Ujjain.{" "}
             </p>
-            <p className="text-center sm:text-lg text-base leading-relaxed text-gray-800 sm:block hidden">
+            <p className="text-justify sm:text-lg text-base leading-relaxed text-gray-800 sm:block hidden px-16">
               Experience the warmth of Indian hospitality at Vakratunda Homestay
               in Ujjain. Our cozy accommodations offer a perfect blend of modern
               comfort and traditional charm. Immerse yourself in the spiritual
@@ -30,52 +30,60 @@ const BannerSection = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 max-w-6xl mx-auto">
-          <div className="text-center mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 max-w-6xl mx-auto px-4">
+          <div className="text-center mb-8">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/ep.svg"
               className="mx-auto"
               alt="Environmentally Conscious"
-              width={64}
-              height={64}
+              width={48}
+              height={48}
             />
-            <p className="text-black mt-4 font-semibold ">Eco-Friendly</p>
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              Eco-Friendly
+            </p>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-8">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/hf.svg"
               className="mx-auto"
               alt="Home Cooked Food"
-              width={64}
-              height={64}
+              width={48}
+              height={48}
             />
-            <p className="text-black mt-4 font-semibold">Breakfast Included</p>
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              Breakfast Included
+            </p>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-8">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/pl.svg"
               className="mx-auto"
               alt="Peaceful Locale"
-              width={64}
-              height={64}
+              width={48}
+              height={48}
             />
-            <p className="text-black mt-4 font-semibold">Peaceful Locale</p>
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              Peaceful Locale
+            </p>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-8">
             <Image
               src="https://www.anamalahomestays.com/assets/img/icons/ec.svg"
               className="mx-auto"
               alt="Warm Hospitality"
-              width={64}
-              height={64}
+              width={48}
+              height={48}
               loading="lazy"
             />
-            <p className="text-black mt-4 font-semibold">Warm Hospitality</p>
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              Warm Hospitality
+            </p>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto h-16 w-16"
+              className="mx-auto h-12 w-12 sm:h-16 sm:w-16"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -87,42 +95,47 @@ const BannerSection = () => {
               <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
               <line x1="12" y1="20" x2="12.01" y2="20" />
             </svg>
-            <p className="text-black mt-4 font-semibold">Free Wi-Fi</p>
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              Free Wi-Fi
+            </p>
           </div>
-
-          <div className="text-center">
+          <div className="text-center mb-8">
             <Image
               src="/images/water.svg"
               className="mx-auto"
-              alt="Warm Hospitality"
-              width={64}
-              height={64}
+              alt="RO+UV Water"
+              width={48}
+              height={48}
               loading="lazy"
             />
-            <p className="text-black mt-4 font-semibold">RO+UV Water</p>
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              RO+UV Water
+            </p>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-8">
             <Image
               src="/images/car.svg"
               className="mx-auto"
-              alt="Warm Hospitality"
-              width={64}
-              height={64}
+              alt="Free Pick & Drop"
+              width={48}
+              height={48}
               loading="lazy"
             />
-            <p className="text-black mt-4 font-semibold">Free Pick & Drop</p>
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              Free Pick & Drop
+            </p>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-8">
             <Image
               src="/images/temple.svg"
               className="mx-auto"
-              alt="Warm Hospitality"
-              width={64}
-              height={64}
+              alt="Temple Visit Assistance"
+              width={48}
+              height={48}
               loading="lazy"
             />
-            <p className="text-black mt-4 font-semibold">
-              Free Mahakal Darshan
+            <p className="text-black mt-2 font-semibold text-sm sm:text-base">
+              Temple Visit Assistance
             </p>
           </div>
         </div>
