@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/parallax";
-
+import Image from "next/image";
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
