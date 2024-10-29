@@ -60,11 +60,13 @@ const Gallery = () => {
           {/* Swiper Slide 1 */}
           <SwiperSlide>
             <div className="swiper-slide-content">
-              <img
+              <Image
                 className="w-full h-96 object-cover cursor-pointer"
                 src="/images/img1.jpg"
                 alt="Bathroom"
                 onClick={() => openImage("/images/img1.jpg")}
+                width={800}
+                height={600}
               />
               <div className="text-center mt-4 font-semibold text-gray-700">
                 Bathroom
