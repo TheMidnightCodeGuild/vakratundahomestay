@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BannerSection = () => {
   return (
-    <div className="w-full bg-cover bg-center h-screen sm:py-20 py-5 px-2 ">
+    <div className="w-full bg-gradient-to-b from-green-100 via-[#d3f1c4] to-[#D0F0C0] bg-cover bg-center h-screen sm:py-24 pt-5 sm:pt-28  sm:px-2 px-1 ">
       <div className="w-full mx-auto">
         <div className="text-center mb-4">
           <h1 className="sm:text-4xl text-3xl font-bold text-black ">
@@ -86,6 +86,7 @@ const BannerSection = () => {
               className="mx-auto h-12 w-12 sm:h-16 sm:w-16"
               viewBox="0 0 24 24"
               fill="none"
+              d="M5 12.55a11 11 0 0 1 14.08 0"
               stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
@@ -127,15 +128,15 @@ const BannerSection = () => {
           </div>
           <div className="text-center mb-8">
             <Image
-              src="/images/temple.svg"
+              src="/images/ac.png"
               className="mx-auto"
-              alt="Temple Visit Assistance"
+              alt="Air Conditioned Rooms"
               width={48}
               height={48}
               loading="lazy"
             />
             <p className="text-black mt-2 font-semibold text-sm sm:text-base">
-              Temple Visit Assistance
+              Air Conditioned Rooms
             </p>
           </div>
         </div>

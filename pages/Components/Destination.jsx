@@ -25,7 +25,7 @@ const DestinationsNearby = () => {
   }, []);
 
   return (
-    <section className="h-screen sm:py-24 py-48 px-4 sm:px-16">
+    <section className="h-screen sm:py-24 py-20 px-4 sm:px-16 bg-gradient-to-b from-green-100 via-[#d3f1c4] to-[#D0F0C0] ">
       <div className="w-full mx-auto">
         <div className="mb-12 text-center">
           <h4 className="text-3xl sm:text-4xl font-bold text-black mb-2">
@@ -43,30 +43,35 @@ const DestinationsNearby = () => {
           className="swiper-container mb-10">
           {[
             {
-              src: "/images/card-1.jpg",
+              src: "/images/card-1.webp",
               alt: "Mahakal Temple",
               title: "Mahakaleshwar Jyotirlinga",
             },
             {
-              src: "/images/iskon.webp",
+              src: "/images/card-2.webp",
               alt: "Isckon Temple",
               title: "Isckon Temple",
             },
-            { src: "/images/card-6.jpg", alt: "Ram Ghat", title: "Ram Ghat" },
+            { src: "/images/card-3.webp", alt: "Ram Ghat", title: "Ram Ghat" },
             {
               src: "/images/card-4.webp",
               alt: "Mahakal Lok",
               title: "Mahakal Lok",
             },
             {
-              src: "/images/card-3.webp",
+              src: "/images/card-5.webp",
               alt: "Harsidhi Mata Mandir",
               title: "Harsidhi Mata Mandir",
             },
             {
-              src: "/images/card-7.jpg",
+              src: "/images/card-6.webp",
               alt: "Kal Bharav Mandir",
               title: "Kal Bharav Mandir",
+            },
+            {
+              src: "/images/card-7.webp",
+              alt: "Kailash Mansarovar",
+              title: "Kailash Mansarovar",
             },
           ].map((slide, index) => (
             <SwiperSlide key={index}>

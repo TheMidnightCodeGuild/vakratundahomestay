@@ -56,27 +56,14 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-
-      <div className="text-white border-t-2 border-white bg-green-900 pt-2 pb-5 mt-md-5 d-flex flex-column flex-md-row justify-content-between">
-        <div className="text-center">
-          <p className="mb-0">
-            Vakratundahomestay.com | Website Designed and Developed By Mayank &
-            Aaradhya
-          </p>
-        </div>
-        <div className="text-center pt-3 pt-md-0">
-          <a href="#" className=" text-decoration-none mx-2">
-            Terms &amp; Conditions
-          </a>
-          <a href="#" className=" text-decoration-none mx-2">
-            Privacy Policy
-          </a>
-          <a href="#" className="text-decoration-none mx-2">
-            Cancellation Policy
-          </a>
-          <a href="#" className="text-decoration-none mx-2">
-            FAQs
-          </a>
+      <div className="text-white border-t-2 border-white bg-green-900 py-10 sm:py-10 flex justify-center items-center mb-10 sm:mb-0 ">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <p className="text-lg sm:text-xl">
+              vakratundahomestay.com | Website Designed and Developed By NOXALGO
+              LLP
+            </p>
+          </div>
         </div>
       </div>
     </>

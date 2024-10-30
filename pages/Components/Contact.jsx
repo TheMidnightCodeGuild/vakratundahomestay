@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font relative min-h-screen">
+    <section className="text-gray-600 body-font relative min-h-screen  bg-gradient-to-b from-green-100 via-[#d3f1c4] to-[#D0F0C0]">
       <div className="container px-5 py-12 md:py-24 mx-auto flex flex-col md:flex-row">
         <div className="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative w-full md:w-1/2 mb-10 md:mb-0">
           <iframe

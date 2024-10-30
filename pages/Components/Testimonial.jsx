@@ -56,7 +56,7 @@ const Testimonial = () => {
       // image: "/images/guest-4.jpg",
       content:
         "The perfect escape from city life! The homestay offered serene views, excellent hospitality, and a truly relaxing environment. It was exactly what we needed for our weekend retreat.",
-      name: "Arjun Srivastav & Anjali Srivastav",
+      name: "Arjun Srivastav & Tapasya Srivastav",
       role: "Couple from New Delhi",
     },
   ];
@@ -64,7 +64,7 @@ const Testimonial = () => {
   return (
     <>
       {/* Testimonial Section */}
-      <section className="h-screen py-24">
+      <section className="h-screen py-24  sm:py-0 mt-0 sm:mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
