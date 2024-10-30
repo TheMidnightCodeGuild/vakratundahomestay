@@ -71,7 +71,7 @@ const Testimonial = () => {
               What Our Guests Say
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover the experiences of those who've stayed with us
+              Discover the experiences of those who&apos;ve stayed with us
             </p>
           </div>
 
@@ -89,7 +89,7 @@ const Testimonial = () => {
                 <div className="bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 h-[300px] flex flex-col">
                   <div className="p-8 flex flex-col justify-between h-full">
                     <div className="text-gray-600 italic mb-5 flex-grow overflow-y-auto">
-                      "{data.content}"
+                      &quot;{data.content}&quot;
                     </div>
                     <div className="flex items-center mt-4">
                       <div className="flex-shrink-0">

@@ -95,7 +95,7 @@ const Contact = () => {
             GET IN TOUCH WITH US
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
-            We'd love to hear from you!
+            We&apos;d love to hear from you!
           </p>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="relative mb-4">
