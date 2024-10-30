@@ -25,7 +25,7 @@ const DestinationsNearby = () => {
   }, []);
 
   return (
-    <section className="h-screen sm:py-24 py-20 px-4 sm:px-16 bg-gradient-to-b from-green-100 via-[#d3f1c4] to-[#D0F0C0] ">
+    <section className="h-screen sm:py-24 py-20 px-4 sm:px-16 ">
       <div className="w-full mx-auto">
         <div className="mb-12 text-center">
           <h4 className="text-3xl sm:text-4xl font-bold text-black mb-2">

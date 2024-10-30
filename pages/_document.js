@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
-
         <meta
           name="description"
           content="Welcome to Vakratunda Homestay in Ujjain - Your perfect accommodation near Mahakaleshwar Temple. Comfortable and affordable homestay experience during Kumbh Mela. Best guesthouse option in Ujjain."

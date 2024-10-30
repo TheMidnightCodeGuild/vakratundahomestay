@@ -73,7 +73,7 @@ export default function Swiper() {
   ));
 
   return (
-    <div className="w-full h-screen mx-auto pt-28  bg-gradient-to-b from-green-100 via-[#d3f1c4] to-[#D0F0C0]">
+    <div className="w-full h-screen mx-auto pt-28  ">
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold text-black mb-2">
           Destinations Nearby

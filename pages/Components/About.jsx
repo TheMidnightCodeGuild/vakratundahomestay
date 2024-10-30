@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BannerSection = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-green-100 via-[#d3f1c4] to-[#D0F0C0] bg-cover bg-center h-screen sm:py-24 pt-5 sm:pt-28  sm:px-2 px-1 ">
+    <div className="w-full  bg-cover bg-center h-screen sm:py-24 pt-5 sm:pt-28  sm:px-2 px-1 ">
       <div className="w-full mx-auto">
         <div className="text-center mb-4">
           <h1 className="sm:text-4xl text-3xl font-bold text-black ">
