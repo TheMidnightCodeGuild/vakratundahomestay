@@ -25,7 +25,7 @@ const DestinationsNearby = () => {
   }, []);
 
   return (
-    <section className="h-screen sm:py-24 py-20 px-4 sm:px-16 ">
+    <section className="h-screen sm:py-24 py-20 px-4 sm:px-16 pt-44 sm:pt-0">
       <div className="w-full mx-auto">
         <div className="mb-12 text-center">
           <h4 className="text-3xl sm:text-4xl font-bold text-black mb-2">
@@ -49,19 +49,19 @@ const DestinationsNearby = () => {
             },
             {
               src: "/images/card-2.webp",
-              alt: "Isckon Temple",
-              title: "Isckon Temple",
+              alt: "Harsidhi Mata Mandir",
+              title: "Harsidhi Mata Mandir",
             },
-            { src: "/images/card-3.webp", alt: "Ram Ghat", title: "Ram Ghat" },
             {
-              src: "/images/card-4.webp",
+              src: "/images/card-3.webp",
               alt: "Mahakal Lok",
               title: "Mahakal Lok",
             },
+
             {
               src: "/images/card-5.webp",
-              alt: "Harsidhi Mata Mandir",
-              title: "Harsidhi Mata Mandir",
+              alt: "Ram Ghat",
+              title: "Ram Ghat",
             },
             {
               src: "/images/card-6.webp",
@@ -70,8 +70,8 @@ const DestinationsNearby = () => {
             },
             {
               src: "/images/card-7.webp",
-              alt: "Kailash Mansarovar",
-              title: "Kailash Mansarovar",
+              alt: "Isckon Temple",
+              title: "Isckon Temple",
             },
           ].map((slide, index) => (
             <SwiperSlide key={index}>

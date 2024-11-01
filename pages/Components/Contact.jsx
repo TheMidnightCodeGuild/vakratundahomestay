@@ -49,7 +49,13 @@ const Contact = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font relative min-h-screen  ">
+    <section className="text-gray-600 body-font relative min-h-screen -mt-14 sm:-mt-2">
+      <div className="text-center -mb-10">
+        <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
+          Our Location
+        </h2>
+        <p className="text-xl text-gray-600">Find us in the heart of Ujjain</p>
+      </div>
       <div className="container px-5 py-12 md:py-24 mx-auto flex flex-col md:flex-row">
         <div className="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative w-full md:w-1/2 mb-10 md:mb-0">
           <iframe

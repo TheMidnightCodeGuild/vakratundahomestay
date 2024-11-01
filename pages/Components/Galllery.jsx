@@ -20,7 +20,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className=" sm:py-20 py-12 h-screen  ">
+    <section className=" sm:py-20 py-12 pt-44 sm:pt-20 h-screen  ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center pb-10">
@@ -56,12 +56,12 @@ const Gallery = () => {
               spaceBetween: 40,
             },
           }}
-          className="swiper-container">
+          className="swiper-container ">
           {/* Swiper Slide 1 */}
           <SwiperSlide>
-            <div className="swiper-slide-content">
+            <div className="swiper-slide-content rounded-full">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img1.jpg"
                 alt="Bathroom"
                 onClick={() => openImage("/images/img1.jpg")}
@@ -78,7 +78,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img2.jpg"
                 alt="Bedroom"
                 onClick={() => openImage("/images/img2.jpg")}
@@ -94,7 +94,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img3.jpg"
                 alt="Balcony"
                 onClick={() => openImage("/images/img3.jpg")}
@@ -110,7 +110,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img4.jpg"
                 alt="Bedroom"
                 onClick={() => openImage("/images/img4.jpg")}
@@ -126,7 +126,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img5.jpg"
                 alt="Balcony"
                 onClick={() => openImage("/images/img5.jpg")}
@@ -141,7 +141,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img6.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img6.jpg")}
@@ -158,7 +158,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img8.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img8.jpg")}
@@ -174,7 +174,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img9.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img9.jpg")}
@@ -190,7 +190,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img10.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img10.jpg")}
@@ -206,7 +206,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img12.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img12.jpg")}
@@ -222,7 +222,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img13.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img13.jpg")}
@@ -238,7 +238,7 @@ const Gallery = () => {
           <SwiperSlide>
             <div className="swiper-slide-content">
               <Image
-                className="w-full h-96 object-cover cursor-pointer"
+                className="w-full h-96 object-cover cursor-pointer rounded-2xl"
                 src="/images/img11.jpg"
                 alt="Toilet"
                 onClick={() => openImage("/images/img11.jpg")}

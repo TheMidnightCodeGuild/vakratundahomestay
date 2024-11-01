@@ -3,14 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="fixed z-50 right-3 bottom-6 lg:right-5">
+      <div className="fixed z-50 right-5 bottom-24 sm:bottom-6 ">
         <a
           className="flex justify-center flex-col-reverse items-center"
           target="_blank"
           rel="noopener noreferrer"
           href="https://wa.me/918085863266">
           <svg
-            className="w-12 h-12"
+            className="w-10 h-10"
             viewBox="0 0 256 258"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -56,16 +56,23 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <div className="text-white border-t-2 border-white bg-green-900 py-10 sm:py-10 flex justify-center items-center mb-10 sm:mb-0 ">
+      <footer className="text-white border-t-2 border-white bg-green-900 py-10 sm:py-10 flex justify-center items-center mb-10 sm:mb-0">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="text-lg sm:text-xl">
-              vakratundahomestay.com | Website Designed and Developed By NOXALGO
-              LLP
+              © {new Date().getFullYear()} vakratundahomestay.com | Website
+              Designed and Developed By{" "}
+              <a
+                href="https://noxalgo.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-300 transition-colors">
+                NOXALGO LLP
+              </a>
             </p>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 };

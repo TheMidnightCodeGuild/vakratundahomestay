@@ -14,7 +14,7 @@ const Index = () => {
     <>
       <ReactLenis root>
         <CustomNavbar />
-        <div className="overflow-x-hidden overflow-y-hidden  bg-[#F3FBF1]">
+        <div className="overflow-x-hidden overflow-y-hidden  bg-[#E6FFDA]">
           <Hero />
           <div id="about">
             <About />

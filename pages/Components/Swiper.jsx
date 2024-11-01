@@ -12,19 +12,15 @@ export default function Swiper() {
     },
     {
       src: "/images/card-2.webp",
-      alt: "Isckon Temple",
+      alt: "Harsidhi Mata Mandir",
       title: "Harsidhi Mata Mandir",
     },
     {
       src: "/images/card-3.webp",
-      alt: "Ram Ghat",
+      alt: "Mahakal Lok",
       title: "Mahakal Lok",
     },
-    {
-      src: "/images/card-4.webp",
-      alt: "Mahakal Lok",
-      title: "Ram Ghat",
-    },
+
     {
       src: "/images/card-5.webp",
       alt: "Harsidhi Mata Mandir",
