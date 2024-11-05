@@ -49,139 +49,164 @@ const Contact = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font relative min-h-screen -mt-14 sm:-mt-2">
-      <div className="text-center -mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold text-black mb-2">
+    <section className="text-gray-600 body-font relative min-h-screen py-8 sm:py-5 md:py-16 lg:py-20">
+      <div className="text-center mb-6 sm:mb-8 md:mb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-2 sm:mb-3">
           Our Location
         </h2>
-        <p className="text-xl text-gray-600">Find us in the heart of Ujjain</p>
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600">
+          Find us in the heart of Ujjain
+        </p>
       </div>
-      <div className="container px-5 py-12 md:py-24 mx-auto flex flex-col md:flex-row">
-        <div className="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative w-full md:w-1/2 mb-10 md:mb-0">
-          <iframe
-            width="100%"
-            height="100%"
-            className="absolute inset-0"
-            title="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.5763793351647!2d75.79008461744384!3d23.149010984890373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396375828d02c23b%3A0x369c02a50dda5f1a!2sVakratunda%20Homestay!5e0!3m2!1sen!2sin!4v1681646891087!5m2!1sen!2sin"
-            style={{
-              filter: "grayscale(1) contrast(1.2) opacity(0.4)",
-            }}></iframe>
-          <a
-            className="absolute inset-0 z-10 cursor-pointer"
-            href="https://www.google.com/maps/dir//B+27%2F5,+Indore+Rd,+near+Mahamritunjay+Dwar,+Vasant+Vihar,+Ujjain,+Madhya+Pradesh+456010/@23.1489896,75.7102479,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x396375828d02c23b:0x369c02a50dda5f1a!2m2!1d75.7926495!2d23.149011?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"></a>
-          <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                ADDRESS
-              </h2>
-              <p className="mt-1">
-                B-27/5, Indore Rd, near Mahamritunjay Dwar, Vasant Vihar,
-                Ujjain, Madhya Pradesh 456010
-              </p>
-            </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a
-                className="text-indigo-500 leading-relaxed hover:text-indigo-600"
-                href="mailto:vakratundahomestay@gmail.com">
-                vakratundahomestay@gmail.com
-              </a>
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">+918085863266</p>
+
+      <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          {/* Map Section */}
+          <div className="w-full lg:w-1/2 h-[400px] sm:h-[450px] md:h-[500px] relative bg-gray-300 rounded-lg overflow-hidden">
+            <iframe
+              width="100%"
+              height="100%"
+              className="absolute inset-0"
+              title="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.5763793351647!2d75.79008461744384!3d23.149010984890373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396375828d02c23b%3A0x369c02a50dda5f1a!2sVakratunda%20Homestay!5e0!3m2!1sen!2sin!4v1681646891087!5m2!1sen!2sin"
+              style={{
+                filter: "grayscale(1) contrast(1.2) opacity(0.4)",
+              }}></iframe>
+            <a
+              className="absolute inset-0 z-10 cursor-pointer"
+              href="https://www.google.com/maps/dir//B+27%2F5,+Indore+Rd,+near+Mahamritunjay+Dwar,+Vasant+Vihar,+Ujjain,+Madhya+Pradesh+456010/@23.1489896,75.7102479,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x396375828d02c23b:0x369c02a50dda5f1a!2m2!1d75.7926495!2d23.149011?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"></a>
+
+            <div className="absolute bottom-0 left-0 right-0 text-black font-semibold bg-white/30 p-4 sm:p-6 rounded-t-lg shadow-md">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <h2 className="font-semibold text-gray-900 tracking-widest text-xs uppercase">
+                    ADDRESS
+                  </h2>
+                  <p className="mt-1 text-sm sm:text-base">
+                    B-27/5, Indore Rd, near Mahamritunjay Dwar, Vasant Vihar,
+                    Ujjain, Madhya Pradesh 456010
+                  </p>
+                </div>
+                <div>
+                  <h2 className="font-semibold text-gray-900 tracking-widest text-xs uppercase mt-4 sm:mt-0">
+                    CONTACT
+                  </h2>
+                  <a
+                    className="text-indigo-500 text-sm sm:text-base hover:text-indigo-600"
+                    href="mailto:vakratundahomestay@gmail.com">
+                    vakratundahomestay@gmail.com
+                  </a>
+                  <p className="text-sm sm:text-base mt-2">+918085863266</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col md:ml-auto w-full md:w-1/2 mt-8 md:mt-0">
-          <h2 className="text-gray-900 text-2xl mb-1 font-medium title-font">
-            GET IN TOUCH WITH US
-          </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            We&apos;d love to hear from you!
-          </p>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="relative mb-4">
-              <label htmlFor="name" className="leading-7 text-sm text-gray-600">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                required
-              />
-            </div>
-            <div className="relative mb-4">
-              <label
-                htmlFor="email"
-                className="leading-7 text-sm text-gray-600">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                required
-              />
-            </div>
-            <div className="relative mb-4">
-              <label
-                htmlFor="mobile"
-                className="leading-7 text-sm text-gray-600">
-                Phone
-              </label>
-              <input
-                type="tel"
-                id="mobile"
-                name="mobile"
-                value={formData.mobile}
-                onChange={handleChange}
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4">
-              <label
-                htmlFor="message"
-                className="leading-7 text-sm text-gray-600">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                required></textarea>
-            </div>
-            <button
-              type="submit"
-              className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg w-full transition duration-300 ease-in-out"
-              disabled={isSubmitting}>
-              {isSubmitting ? (
-                <PropagateLoader color="white" size={8} speedMultiplier={0.7} />
-              ) : (
-                "Send Message"
+
+          {/* Contact Form Section */}
+          <div className="w-full lg:w-1/2">
+            <div className="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                GET IN TOUCH WITH US
+              </h2>
+              <p className="text-sm sm:text-base text-gray-600 mb-6">
+                We&apos;d love to hear from you!
+              </p>
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="text-sm text-gray-600 block mb-1">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="text-sm text-gray-600 block mb-1">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="mobile"
+                    className="text-sm text-gray-600 block mb-1">
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    value={formData.mobile}
+                    onChange={handleChange}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="text-sm text-gray-600 block mb-1">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows="4"
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 resize-none"
+                    required></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300 flex items-center justify-center min-h-[44px]"
+                  disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <PropagateLoader
+                      color="white"
+                      size={8}
+                      speedMultiplier={0.7}
+                    />
+                  ) : (
+                    "Send Message"
+                  )}
+                </button>
+              </form>
+
+              {status && (
+                <div
+                  className={`mt-4 p-3 rounded-md text-center text-sm ${
+                    status.includes("Error")
+                      ? "bg-red-50 text-red-600"
+                      : "bg-green-50 text-green-600"
+                  }`}>
+                  {status}
+                </div>
               )}
-            </button>
-          </form>
-          {status && (
-            <p
-              className={`mt-4 text-center ${
-                status.includes("Error") ? "text-red-600" : "text-green-600"
-              }`}>
-              {status}
-            </p>
-          )}
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ const Testimonial = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 1280) {
         setSlidesPerView(3);
       } else if (window.innerWidth >= 768) {
         setSlidesPerView(2);
@@ -30,7 +30,6 @@ const Testimonial = () => {
   const TestimonialData = [
     {
       id: 1,
-      // image: "/images/guest-1.jpg",
       content:
         "Our stay at this homestay was beyond amazing! The hosts were incredibly welcoming, and the ambiance made us feel at home. We loved waking up to the scenic views and peaceful environment every day.",
       name: "Ram Chaturvedi",
@@ -38,7 +37,6 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      // image: "/images/guest-2.jpg",
       content:
         "The homestay was perfect for our family vacation. The rooms were cozy, and the food was delicious. The kids especially enjoyed the garden and outdoor activities. Definitely coming back!",
       name: "Rajesh Kumar",
@@ -46,7 +44,6 @@ const Testimonial = () => {
     },
     {
       id: 3,
-      // image: "/images/guest-3.jpg",
       content:
         "I had an unforgettable experience at this homestay. The personalized service, attention to detail, and the warmth of the hosts made all the difference. Highly recommend .",
       name: "Krish Gupta",
@@ -54,7 +51,6 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      // image: "/images/guest-4.jpg",
       content:
         "The perfect escape from city life! The homestay offered serene views, excellent hospitality, and a truly relaxing environment. It was exactly what we needed for our weekend retreat.",
       name: "Arjun Srivastav & Tapasya Srivastav",
@@ -64,14 +60,13 @@ const Testimonial = () => {
 
   return (
     <>
-      {/* Testimonial Section */}
-      <section className="h-screen py-24  sm:py-0 mt-0 sm:mt-28 pt-10 sm:pt-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+      <section className="min-h-screen py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 sm:mb-4">
               What Our Guests Say
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               Discover the experiences of those who&apos;ve stayed with us
             </p>
           </div>
@@ -79,33 +74,46 @@ const Testimonial = () => {
           <Swiper
             modules={[Autoplay]}
             slidesPerView={slidesPerView}
-            spaceBetween={30}
+            spaceBetween={20}
             loop={true}
             autoplay={{
-              delay: 1000,
+              delay: 3000,
               disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                spaceBetween: 20,
+              },
+              768: {
+                spaceBetween: 25,
+              },
+              1024: {
+                spaceBetween: 30,
+              },
             }}
             className="swiper-container">
             {TestimonialData.map((data) => (
               <SwiperSlide key={data.id}>
-                <div className="bg-white rounded-lg shadow-xl overflow-hidden transform pointer-cursor h-[300px] flex flex-col">
-                  <div className="p-8 flex flex-col justify-between h-full">
-                    <div className="text-gray-600 italic mb-5 flex-grow overflow-y-auto">
+                <div className="bg-white rounded-lg shadow-xl overflow-hidden h-[250px] sm:h-[280px] md:h-[300px] transition-transform hover:scale-[1.02]">
+                  <div className="p-4 sm:p-6 md:p-8 flex flex-col justify-between h-full">
+                    <div className="text-gray-600 italic mb-4 flex-grow overflow-y-auto text-sm sm:text-base">
                       &quot;{data.content}&quot;
                     </div>
-                    <div className="flex items-center mt-4">
+                    <div className="flex items-center mt-auto">
                       <div className="flex-shrink-0">
                         <img
-                          className="h-12 w-12 rounded-full"
+                          className="h-10 w-10 sm:h-12 sm:w-12 rounded-full"
                           src={`https://ui-avatars.com/api/?name=${data.name}&background=random`}
                           alt={data.name}
                         />
                       </div>
-                      <div className="ml-4">
-                        <div className="text-lg font-medium text-gray-900">
+                      <div className="ml-3 sm:ml-4">
+                        <div className="text-base sm:text-lg font-medium text-gray-900">
                           {data.name}
                         </div>
-                        <div className="text-gray-500">{data.role}</div>
+                        <div className="text-sm sm:text-base text-gray-500">
+                          {data.role}
+                        </div>
                       </div>
                     </div>
                   </div>

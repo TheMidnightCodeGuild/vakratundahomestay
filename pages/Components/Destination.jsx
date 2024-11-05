@@ -25,22 +25,30 @@ const DestinationsNearby = () => {
   }, []);
 
   return (
-    <section className="h-screen sm:py-24 py-20 px-4 sm:px-16 pt-44 sm:pt-0">
-      <div className="w-full mx-auto">
-        <div className="mb-12 text-center">
-          <h4 className="text-3xl sm:text-4xl font-bold text-black mb-2">
+    <section className="min-h-screen -my-44 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-2">
             Destinations Nearby
           </h4>
-          <p className="text-base sm:text-lg text-gray-600">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600">
             Explore the most popular nearby attractions
           </p>
         </div>
 
         <Swiper
           slidesPerView={slidesPerView}
-          spaceBetween={20}
+          spaceBetween={10}
           loop={true}
-          className="swiper-container mb-10">
+          breakpoints={{
+            640: {
+              spaceBetween: 15,
+            },
+            768: {
+              spaceBetween: 20,
+            },
+          }}
+          className="swiper-container mb-6 sm:mb-10">
           {[
             {
               src: "/images/card-1.webp",
@@ -57,7 +65,6 @@ const DestinationsNearby = () => {
               alt: "Mahakal Lok",
               title: "Mahakal Lok",
             },
-
             {
               src: "/images/card-5.webp",
               alt: "Ram Ghat",
@@ -76,13 +83,15 @@ const DestinationsNearby = () => {
           ].map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="swiper-slide-content">
-                <img
-                  src={slide.src}
-                  loading="lazy"
-                  alt={slide.alt}
-                  className="w-full h-64 sm:h-80 object-cover rounded-xl shadow-lg"
-                />
-                <div className="text-center mt-4 font-semibold text-gray-700">
+                <div className="relative aspect-[4/3] w-full">
+                  <img
+                    src={slide.src}
+                    loading="lazy"
+                    alt={slide.alt}
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                  />
+                </div>
+                <div className="text-center mt-3 font-semibold text-gray-700 text-sm sm:text-base">
                   {slide.title}
                 </div>
               </div>
