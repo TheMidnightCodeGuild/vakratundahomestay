@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY) {
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -57,18 +58,22 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-opacity-10 backdrop-blur-sm text-white fixed top-4 left-0 right-0 z-50 transition-transform duration-300 ${
+      className={`bg-black/30 backdrop-blur-sm text-white fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-2 sm:space-x-3 rtl:space-x-reverse">
-          <img
-            src="/images/logo.png"
-            className="h-10 xs:h-12 sm:h-14 md:h-16"
-            alt="Logo"
-          />
+          <div className="relative h-10 xs:h-12 sm:h-14 md:h-12 aspect-square">
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
           <span className="text-base xs:text-xl sm:text-2xl text-white font-semibold whitespace-nowrap">
             Vakratunda Homestay
           </span>
@@ -78,7 +83,7 @@ const Navbar = () => {
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center w-auto h-10 justify-center text-sm text-white rounded-lg md:hidden transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-opacity-50"
+          className="inline-flex items-center w-auto h-10 justify-center text-sm text-white rounded-lg md:hidden transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}>
           <span className="sr-only">Toggle menu</span>
@@ -112,8 +117,10 @@ const Navbar = () => {
         {/* Navbar Links */}
         <div
           className={`${
-            isMenuOpen || !isMobile ? "block" : "hidden"
-          } w-full md:block md:w-auto transition-all duration-300`}
+            isMenuOpen ? "block" : "hidden"
+          } w-full md:block md:w-auto transition-all duration-300 ${
+            isMenuOpen && isMobile ? "bg-black/80 rounded-lg mt-4" : ""
+          }`}
           id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-transparent text-white">
             <li>
