@@ -62,7 +62,7 @@ export default function Swiper() {
         className="object-cover"
         priority={item.alt === "Mahakal Temple"}
       />
-      <h2 className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-4 text-center text-lg font-semibold">
+      <h2 className="absolute bottom-0 left-0 right-0 bg-gray-900/30 text-white p-4 text-center text-lg font-semibold">
         {item.title}
       </h2>
     </motion.div>

@@ -23,10 +23,6 @@ export default function Document() {
         />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
-        <title>
-          Vakratunda Homestay | Best Homestay in Ujjain near Mahakaleshwar
-          Temple
-        </title>
       </Head>
       <body className="antialiased">
         <Main />

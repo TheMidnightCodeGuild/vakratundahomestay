@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import CustomNavbar from "./Components/HomeNavbar";
+import Navbar from "./Components/Navbar";
 import ReactLenis from "lenis/react";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
@@ -13,27 +13,33 @@ const Index = () => {
   return (
     <>
       <ReactLenis root>
-        <CustomNavbar />
+        <Navbar />
         <div className="overflow-x-hidden overflow-y-hidden  bg-[#E6FFDA]">
           <Hero />
+
           <div id="about">
             <About />
           </div>
+
           <div id="gallery">
             <Gallery />
           </div>
-          <div className="hidden sm:block" id="destination">
-            <Swiper />
+
+          <div id="destinations">
+            <div className="hidden sm:block">
+              <Swiper />
+            </div>
+            <div className="sm:hidden block">
+              <Destination />
+            </div>
           </div>
-          <div className="sm:hidden block" id="destination">
-            <Destination />
-          </div>
-          <div id="testimonial">
+
+          <div id="testimonials">
             <Testimonial />
           </div>
-          <div id="contact">
-            <Contact />
-          </div>
+
+          <Contact />
+
           <Footer />
         </div>
       </ReactLenis>

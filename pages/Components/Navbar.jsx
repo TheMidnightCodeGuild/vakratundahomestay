@@ -114,7 +114,7 @@ const Navbar = () => {
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-transparent text-white">
             <li>
               <Link
-                href="#about"
+                href="/#about"
                 onClick={closeMenu}
                 className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 About
@@ -122,7 +122,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#gallery"
+                href="/#gallery"
                 onClick={closeMenu}
                 className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 Gallery
@@ -130,7 +130,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#destination"
+                href="/#destinations"
                 onClick={closeMenu}
                 className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 Destinations
@@ -138,7 +138,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#testimonial"
+                href="/#testimonials"
                 onClick={closeMenu}
                 className="block py-2 px-3 rounded transition-all duration-300 hover:bg-gray-200 hover:text-gray-800 md:hover:bg-transparent">
                 Testimonials
