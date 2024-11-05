@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import { Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
 
 const Testimonial = () => {
@@ -76,17 +77,18 @@ const Testimonial = () => {
           </div>
 
           <Swiper
+            modules={[Autoplay]}
             slidesPerView={slidesPerView}
             spaceBetween={30}
             loop={true}
             autoplay={{
-              delay: 5000,
+              delay: 1000,
               disableOnInteraction: false,
             }}
             className="swiper-container">
             {TestimonialData.map((data) => (
               <SwiperSlide key={data.id}>
-                <div className="bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 h-[300px] flex flex-col">
+                <div className="bg-white rounded-lg shadow-xl overflow-hidden transform pointer-cursor h-[300px] flex flex-col">
                   <div className="p-8 flex flex-col justify-between h-full">
                     <div className="text-gray-600 italic mb-5 flex-grow overflow-y-auto">
                       &quot;{data.content}&quot;
