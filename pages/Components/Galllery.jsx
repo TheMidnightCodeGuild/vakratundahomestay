@@ -20,7 +20,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="min-h-screen py-8 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+    <section className="min-h-screen py-2 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center pb-6 md:pb-10">
