@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div
-      className="relative h-[92vh] sm:h-screen md:h-screen lg:h-screen xl:h-screen  w-full bg-cover bg-center bg-no-repeat"
+      className="relative h-[93vh] sm:h-screen md:h-screen lg:h-screen xl:h-screen  w-full bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/images/lal2.png')" }}>
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-4 sm:px-6 lg:px-8">

@@ -57,7 +57,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-opacity-10 backdrop-blur-sm text-white fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+      className={`bg-opacity-10 backdrop-blur-sm text-white fixed top-4 left-0 right-0 z-50 transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-4">
@@ -69,7 +69,7 @@ const Navbar = () => {
             className="h-10 xs:h-12 sm:h-14 md:h-16"
             alt="Logo"
           />
-          <span className="text-lg xs:text-xl sm:text-2xl text-white font-semibold whitespace-nowrap">
+          <span className="text-base xs:text-xl sm:text-2xl text-white font-semibold whitespace-nowrap">
             Vakratunda Homestay
           </span>
         </Link>
