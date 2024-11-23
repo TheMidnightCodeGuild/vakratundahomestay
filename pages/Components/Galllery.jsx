@@ -20,7 +20,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="min-h-screen py-2 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+    <section className="min-h-screen py-2 md:py-16 lg:py-14 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center pb-6 md:pb-10">
@@ -60,7 +60,7 @@ const Gallery = () => {
           {/* Swiper Slide 1 */}
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img1.jpg"
@@ -79,7 +79,7 @@ const Gallery = () => {
           {/* Swiper Slide 2 */}
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img2.jpg"
@@ -97,7 +97,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img3.jpg"
@@ -115,7 +115,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img4.jpg"
@@ -133,7 +133,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img5.jpg"
@@ -151,7 +151,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img6.jpg"
@@ -169,7 +169,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img8.jpg"
@@ -187,7 +187,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img9.jpg"
@@ -205,7 +205,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img10.jpg"
@@ -223,7 +223,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img12.jpg"
@@ -241,7 +241,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img13.jpg"
@@ -259,7 +259,7 @@ const Gallery = () => {
 
           <SwiperSlide>
             <div className="h-full">
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   className="rounded-lg object-cover cursor-pointer hover:opacity-90 transition-opacity"
                   src="/images/img11.jpg"

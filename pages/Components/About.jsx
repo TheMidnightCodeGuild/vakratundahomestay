@@ -177,15 +177,15 @@ const BannerSection = () => {
             whileHover={{ scale: 1.05 }}
             className="text-center p-4">
             <Image
-              src="/images/car.svg"
+              src="/images/security.svg"
               className="mx-auto w-8 h-8 sm:w-12 sm:h-12"
-              alt="Free Pick & Drop"
+              alt="Home Cooked Meals"
               width={48}
               height={48}
               loading="lazy"
             />
             <p className="text-black mt-2 font-semibold text-xs sm:text-sm lg:text-base">
-              Free Pick & Drop
+              Security & Safety Measures
             </p>
           </motion.div>
 

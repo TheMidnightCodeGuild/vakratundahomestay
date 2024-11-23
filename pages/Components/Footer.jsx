@@ -67,7 +67,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-300 transition-colors">
-                NOXALGO LLP
+                NOXALGO
               </a>
             </p>
           </div>
